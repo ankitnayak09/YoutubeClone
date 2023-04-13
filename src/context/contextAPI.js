@@ -17,7 +17,7 @@ export const AppContext = (props) => {
 	const fetchSelectedCategories = (query) => {
 		fetchDataFromAPI(`search/?q=${query}`).then(({ contents }) => {
 			console.log(contents);
-			// setSearchResults()
+			setSearchResults(contents);
 			setLoading(false);
 		});
 	};
