@@ -28,7 +28,7 @@ function LeftNav() {
 			<div className="flex px-5 flex-col">
 				{categories.map((category) => {
 					return (
-						<React.Fragment>
+						<React.Fragment key={category.name}>
 							<LeftNavMenuItem
 								text={
 									category.type === "home"
