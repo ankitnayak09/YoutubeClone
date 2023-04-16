@@ -63,7 +63,7 @@ function VideoDetails() {
 								<div className="flex h-11 w-11 rounded-full overflow-hidden">
 									<img
 										className="h-full w-full object-cover"
-										src={video.author.avatar[0].url}
+										src={video?.author?.avatar[0].url}
 									/>
 								</div>
 							</div>
