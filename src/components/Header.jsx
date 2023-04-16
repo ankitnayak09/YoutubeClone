@@ -25,7 +25,7 @@ function Header() {
 			(event?.key === "Enter" || event === "searchButton") &&
 			searchQuery?.length > 0
 		) {
-			navigate(`/searchResults/${searchQuery}`);
+			navigate(`/searchResult/${searchQuery}`);
 		}
 	};
 

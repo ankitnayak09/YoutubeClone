@@ -3,6 +3,7 @@ import ReactPlayer from "react-player";
 import { useParams } from "react-router-dom";
 import { BsFillCheckCircleFill } from "react-icons/bs";
 import { AiOutlineLike } from "react-icons/ai";
+import { AiFillEye } from "react-icons/ai";
 import { abbreviateNumber } from "js-abbreviation-number";
 
 import { fetchDataFromApi } from "../utils/api";
@@ -92,7 +93,7 @@ function VideoDetails() {
 								)} Likes`}</span>
 							</div>
 							<div className="flex items-center justify-center h-11 px-6 rounded-3xl bg-white/[0.15] ml-4">
-								{/* <AiOutlineLike className="text-xl text-white mr-2" /> */}
+								<AiFillEye className="text-xl text-white mr-2" />
 								<span>{`${abbreviateNumber(
 									video?.stats?.views,
 									2
